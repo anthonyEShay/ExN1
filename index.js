@@ -17,7 +17,7 @@ express()
             // mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, db) {  // works with mongodb v2 but not v3
             if(err) throw err;
             //get collection of routes
-            var db = client.db('heroku_xrhllv16');  // in v3 we need to get the db from the client
+            var db = client.db('heroku_54zgmmrg');  // in v3 we need to get the db from the client
             var Routes = db.collection('Routes');
             //get all Routes with frequency >=1
             Routes.find({ frequency : { $gte: 1 } }).sort({ name: 1 }).toArray(function (err, docs) {
